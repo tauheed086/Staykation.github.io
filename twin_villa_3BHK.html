@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>StayKation -Villa Rentals</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .amenities-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .amenities-buttons button {
+            background-color: aliceblue;
+            border: 2px aliceblue;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #007BFF;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .amenities-buttons button:hover {
+            background-color: #007BFF;
+            color: aliceblue;
+        }
+
+        .amenities-buttons i {
+            font-size: 18px;
+        }
+        
+        .carousel-img {
+        height: 800px; /* You can adjust this height */
+        object-fit: cover; /* Ensures images are scaled to fit their container */
+    }
+    
+    </style>
+</head>
+
+<body>
+    <div class="bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-dark px-0">
+            <div class="row gx-0">
+                <div class="col-lg-3 bg-dark d-none d-lg-block">
+                    <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                        <img src="img/staylogo.jpg" alt="Logo" style="height: 50px; width: auto; margin-right: 10px; border-radius: 50%;">
+
+                        <h1 class="m-0 text" style="color: aliceblue;">StayKation</h1>
+                    </a>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row gx-0 bg-white d-none d-lg-flex">
+                        <div class="col-lg-7 px-5 text-start">
+                            <div class="h-100 d-inline-flex align-items-center py-2 me-4">
+                                <i class="fa fa-envelope text-primary me-2"></i>
+                                <p class="mb-0">info@example.com</p>
+                            </div>
+                            <div class="h-100 d-inline-flex align-items-center py-2">
+                                <i class="fa fa-phone-alt text-primary me-2"></i>
+                                <a class="mb-0" href="tel: +012 345 6789" >+012 345 6789</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 px-5 text-end">
+                            <div class="d-inline-flex align-items-center py-2">
+                                
+                                
+                                <a class="me-3" href="https://www.instagram.com/twinvillasofficial/"><i class="fab fa-instagram"></i></a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0">
+                        <a href="index.html" class="navbar-brand d-block d-lg-none">
+                            <h1 class="m-0 text-primary" style="color: aliceblue;">StayKation</h1>
+                        </a>
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto py-0">
+                                <a href="index.html" class="nav-item nav-link">Home</a>
+                                <a href="" class="nav-item nav-link">></a>
+                                <a href="" class="nav-item nav-link">Twin Villa -3BHK</a>
+                                <!-- <a href="room.html" class="nav-item nav-link">Rooms</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                    <div class="dropdown-menu rounded-0 m-0">
+                                        <a href="booking.html" class="dropdown-item">Booking</a>
+                                        <a href="team.html" class="dropdown-item">Our Team</a>
+                                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                    </div>
+                                </div>
+                                <a href="contact.html" class="nav-item nav-link">Contact</a> -->
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0 mb-5">
+            <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 carousel-img" src="img/TV_3BHK/IMG-20240131-WA0036.jpg" alt="Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 carousel-img" src="img/TV_3BHK/IMG-20240131-WA0040.jpg" alt="Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 carousel-img" src="img/TV_3BHK/IMG-20240131-WA0043.jpg" alt="Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 carousel-img" src="img/TV_3BHK/IMG-20240131-WA0049.jpg" alt="Image">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 carousel-img" src="img/TV_3BHK/IMG-20240131-WA0050.jpg" alt="Image">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+
+        <!-- Booking Start -->
+        <!-- <div class="container-fluid booking pb-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="bg-white shadow" style="padding: 35px;">
+                    <div class="row g-2">
+                        <div class="col-md-10">
+                            <div class="row g-2">
+                                <div class="col-md-3">
+                                    <div class="date" id="date1" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input"
+                                            placeholder="Check in" data-target="#date1" data-toggle="datetimepicker" />
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="date" id="date2" data-target-input="nearest">
+                                        <input type="text" class="form-control datetimepicker-input" placeholder="Check out" data-target="#date2" data-toggle="datetimepicker"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <select class="form-select">
+                                        <option selected>Adult</option>
+                                        <option value="1">Adult 1</option>
+                                        <option value="2">Adult 2</option>
+                                        <option value="3">Adult 3</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <select class="form-select">
+                                        <option selected>Child</option>
+                                        <option value="1">Child 1</option>
+                                        <option value="2">Child 2</option>
+                                        <option value="3">Child 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-primary w-100">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Booking End -->
+
+
+        <!-- About Start --> 
+         <section>
+        <div class="container-xxl py-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title text-center text-secondary text-uppercase">About</h6>
+                <h1 class="mb-5">Explore <span class="text-secondary text-uppercase">Twin Villa</span></h1>
+            </div>
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <!-- <h6 class="section-title text-start text-secondary text-uppercase"></h6> -->
+                        <h1 class="mb-4">Welcome to <span class="text-secondary">Twin Villa</span></h1>
+                        <h6 class="section-title text-start text-secondary text-uppercase">3-BHK</h6>
+                        <!-- <p class="mb-4">Staykation offers luxurious villa rentals for unforgettable vacations. Experience comfort, privacy, and relaxation in stunning locations, perfect for a peaceful getaway or an adventure-filled retreat</p> -->
+                        <p class="mb-4">Welcome to Twin Villa, a contemporary 3-bedroom retreat designed for comfort, style, and relaxation. Nestled in a peaceful setting, this villa offers an inviting ambiance with spacious living areas and modern amenities. Each bedroom is tastefully designed with plush furnishings and en-suite bathrooms, ensuring a luxurious and restful stay. The open-plan kitchen and dining area provide the perfect space for cooking and enjoying meals with family and friends. Whether you’re looking to unwind in the cozy living room or host a family dinner, the villa's layout is both functional and elegant</p>
+                        <p class="mb-4">Step outside to enjoy the villa’s private pool, surrounded by a well-maintained garden that invites guests to relax in the serene environment. The outdoor lounge area is perfect for sunbathing, reading, or simply enjoying the fresh air. The Twin Villa also offers plenty of activities nearby, allowing guests to explore local attractions or simply savor the peaceful surroundings. Whether you're planning a family vacation or a quiet escape, this 3BHK villa provides the perfect mix of comfort and tranquility for a memorable stay.</p>
+                        <div class="row g-3 pb-4">
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center p-4">
+                                        <i class="fa fa-bed fa-2x text-primary mb-2"></i>
+                                        <h2 class="mb-1" data-toggle="counter-up">3</h2>
+                                        <p class="mb-0">Bedrooms</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center p-4">
+                                        <i class="fas fa-restroom fa-2x text-primary mb-2"></i>
+                                        <h2 class="mb-1" data-toggle="counter-up">5</h2>
+                                        
+                                        <p class="mb-0">Bathrooms</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="border rounded p-1">
+                                    <div class="border rounded text-center p-4">
+                                        <i class="fa fa-users fa-2x text-primary mb-2"></i>
+                                        <h2 class="mb-1" data-toggle="counter-up">8</h2>
+                                        <p class="mb-0">Guests</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row g-1">
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="img/TV_3BHK/IMG-20240131-WA0043.jpg" style=" height: 300px;">
+                            </div>
+                            <div class="col-6 text-start" style="height: 300px; overflow: hidden; margin-bottom: 25px;">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" style="height: 100%; object-fit: cover;" src="img/TV_3BHK/IMG-20240131-WA0035.jpg">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-70 wow zoomIn" data-wow-delay="0.5s" style="height: 300px;" src="img/TV_3BHK/IMG-20240131-WA0036.jpg">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="img/TV_3BHK/IMG-20240131-WA0039.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        </section>
+        <!-- About End -->
+<!-- Amenities -->
+<div class="container-xxl py-5">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="section-title text-center text-secondary text-uppercase">Services</h6>
+        <h1 class="mb-5">Explore <span class="text-secondary text-uppercase">Amenities</span></h1>
+    </div>
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <!-- <h6 class="section-title text-start text-secondary text-uppercase"></h6> -->
+                <h1 class="mb-4"><span class="text-secondary">Twin Villa</span></h1>
+                <h6 class="section-title text-start text-secondary text-uppercase">Goa</h6>
+                <!-- <p class="mb-4">Staykation offers luxurious villa rentals for unforgettable vacations. Experience comfort, privacy, and relaxation in stunning locations, perfect for a peaceful getaway or an adventure-filled retreat</p> -->
+                <div class="amenities-buttons">
+                    <!-- Guest Icon -->
+                    <button>
+                        <i class="fas fa-user-friends"></i> 4 Guests
+                    </button>
+            
+                    <!-- Bed Icon -->
+                    <button>
+                        <i class="fas fa-bed"></i> 2 Bedrooms
+                    </button>
+            
+                    <!-- Bathroom Icon -->
+                    <button>
+                        <i class="fas fa-bath"></i> 2 Bathrooms
+                    </button>
+            
+                    <!-- Wifi Icon -->
+                    <button>
+                        <i class="fas fa-wifi"></i> Free Wifi
+                    </button>
+            
+                    <!-- Parking Icon -->
+                    <button>
+                        <i class="fas fa-parking"></i> Free Parking
+                    </button>
+            
+                    <!-- Air Conditioning Icon -->
+                    <button>
+                        <i class="fas fa-wind"></i> Air Conditioning
+                    </button>
+            
+                    <!-- TV Icon -->
+                    <button>
+                        <i class="fas fa-tv"></i> Cable TV
+                    </button>
+            
+                    <!-- Kitchen Icon -->
+                    <button>
+                        <i class="fas fa-utensils"></i> Fully Equipped Kitchen
+                    </button>
+            
+                    <!-- Pool Icon -->
+                    <button>
+                        <i class="fas fa-swimming-pool"></i> Private Pool
+                    </button>
+            
+                    <!-- Pets Icon -->
+                    <button>
+                        <i class="fas fa-paw"></i> Pet Friendly
+                    </button>
+            
+                    <!-- Laundry Icon -->
+                    <button>
+                        <i class="fas fa-washer"></i> Laundry Facilities
+                    </button>
+            
+                    <!-- Safe Icon -->
+                    <button>
+                        <i class="fas fa-lock"></i> Safe Box
+                    </button>
+            
+                    <!-- Smoking Icon -->
+                    <button>
+                        <i class="fas fa-smoking-ban"></i> Non-Smoking Rooms
+                    </button>
+            
+                    <!-- Balcony Icon -->
+                    <button>
+                        <i class="fas fa-chair"></i> Private Balcony
+                    </button>
+            
+                    <!-- Fitness Center Icon -->
+                    <button>
+                        <i class="fas fa-dumbbell"></i> Fitness Center
+                    </button>
+                    </div>
+                    <br>
+                    <h4 class=" text-start">Great for: <span class="text-secondary text-uppercase"> <i class="fas fa-user"></i> Senior Citizen, </span> <span class="text-secondary text-uppercase"> <i class="fas fa-child"></i> Kid </span></h4>
+            </div>
+            <div class="col-lg-6">
+                <div class="row g-3">
+                    
+                        <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="img/TV_3BHK/IMG-20240131-WA0043.jpg" style="height: 400px; width: 350px;">
+                    
+                    <!-- <div class="col-6 text-start" style="height: 300px; overflow: hidden;">
+                        <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" style="height: 100%; object-fit: cover;" src="img/TV_3BHK/IMG-20240917-WA0032.jpg">
+                    </div>
+                    <div class="col-6 text-end">
+                        <img class="img-fluid rounded w-70 wow zoomIn" data-wow-delay="0.5s" src="img/TV_3BHK/IMG-20240917-WA0050.jpg">
+                    </div>
+                    <div class="col-6 text-start">
+                        <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="img/TV_3BHK/IMG-20240917-WA0043.jpg">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Amenities -->
+
+        <!-- Room Start -->
+         <section>
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title text-center text-secondary text-uppercase">Our Villa</h6>
+                    <h1 class="mb-5">Explore <span class="text-secondary text-uppercase">Twin Villa</span></h1>
+                </div>
+                <div class="row g-8">
+
+    <!--  Bedroom 1 -->
+    <div class="col-lg-4 col-md-3 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="room-item shadow rounded overflow-hidden" style="border-radius: 15px;">
+            <div class="position-relative">
+                <img class="img-fluid" src="img/TV_3BHK/IMG-20240131-WA0036.jpg" alt="Queen Bedroom 1" data-bs-toggle="modal" data-bs-target="#modalQueenBedroom1" style="cursor: pointer;">
+            </div>
+            <div class="p-2 mt-2">
+                <div class="d-flex justify-content-between mb-3">
+                    <h5 class="mb-0">Bedroom 1</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Bedroom 2 -->
+    <div class="col-lg-4 col-md-3 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="room-item shadow rounded overflow-hidden" style="border-radius: 15px;">
+            <div class="position-relative">
+                <img class="img-fluid" src="img/TV_3BHK/IMG-20240131-WA0038.jpg" alt="Queen Bedroom 2" data-bs-toggle="modal" data-bs-target="#modalQueenBedroom2" style="cursor: pointer;">
+            </div>
+            <div class="p-2 mt-2">
+                <div class="d-flex justify-content-between mb-3">
+                    <h5 class="mb-0">Bedroom 2</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Bedroom 1 -->
+    <div class="col-lg-4 col-md-3 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="room-item shadow rounded overflow-hidden" style="border-radius: 15px;">
+            <div class="position-relative">
+                <img class="img-fluid" src="img/TV_3BHK/IMG-20240131-WA0048.jpg" alt="King Bedroom 1" data-bs-toggle="modal" data-bs-target="#modalKingBedroom1" style="cursor: pointer;">
+            </div>
+            <div class="p-2 mt-2">
+                <div class="d-flex justify-content-between mb-3">
+                    <h5 class="mb-0">Bedroom 3</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Bedroom 2 -->
+    
+
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="margin-top: 2%;">
+        <h6 class="section-title text-center text-secondary text-uppercase">Bedrooms</h6>
+    </div>
+</div>
+
+<!-- Modal  Bedroom 1 -->
+<div class="modal fade" id="modalQueenBedroom1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="img/TV_3BHK/IMG-20240131-WA0036.jpg" class="img-fluid" alt="Queen Bedroom 1">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal  Bedroom 2 -->
+<div class="modal fade" id="modalQueenBedroom2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="img/TV_3BHK/IMG-20240131-WA0038.jpg" class="img-fluid" alt="Queen Bedroom 2">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Bedroom 1 -->
+<div class="modal fade" id="modalKingBedroom1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="img/TV_3BHK/IMG-20240131-WA0048.jpg" class="img-fluid" alt="King Bedroom 1">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Bedroom 2 -->
+
+
+
+<br><br><br>
+
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="margin-top: 2%;">
+               
+                <h1 class="mb-5">Other <span class="text-secondary text-uppercase">View</span></h1>
+            </div>
+            <div id="roomCarousel" class="carousel slide" data-bs-ride="carousel">
+           
+    <!-- Carousel Inner -->
+    <div class="carousel-inner">
+    
+        <!-- First Slide -->
+        <div class="carousel-item active">
+            <div class="row g-4">
+                <!-- Living Room View 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="room-item shadow rounded overflow-hidden" style="border-radius: 15px;">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/TV_3BHK/IMG-20240131-WA0039.jpg" alt="Room 1" data-bs-toggle="modal" data-bs-target="#modalRoom1">
+                        </div>
+                        <div class="p-2 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Living Room View 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Living Room View 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="room-item shadow rounded overflow-hidden" style="border-radius: 15px;">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/TV_3BHK/IMG-20240131-WA0040.jpg" alt="Room 2" data-bs-toggle="modal" data-bs-target="#modalRoom2">
+                        </div>
+                        <div class="p-2 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Living Room View 2</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Living Room View 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="room-item shadow rounded overflow-hidden" style="border-radius: 15px;">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/TV_3BHK/IMG-20240131-WA0042.jpg" alt="Room 3" data-bs-toggle="modal" data-bs-target="#modalRoom3">
+                        </div>
+                        <div class="p-2 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Living Room View 3</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modals -->
+        
+        <!-- Modal for Room 1 -->
+        <div class="modal fade" id="modalRoom1" tabindex="-1" aria-labelledby="modalRoom1Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <img class="img-fluid w-100" src="img/TV_3BHK/IMG-20240131-WA0039.jpg" alt="Living Room View 1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal for Room 2 -->
+        <div class="modal fade" id="modalRoom2" tabindex="-1" aria-labelledby="modalRoom2Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <img class="img-fluid w-100" src="img/TV_3BHK/IMG-20240131-WA0040.jpg" alt="Living Room View 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal for Room 3 -->
+        <div class="modal fade" id="modalRoom3" tabindex="-1" aria-labelledby="modalRoom3Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <img class="img-fluid w-100" src="img/TV_3BHK/IMG-20240131-WA0042.jpg" alt="Living Room View 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Second Slide -->
+        <div class="carousel-item">
+            <div class="row g-4">
+                <!-- Pool View 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="room-item shadow rounded overflow-hidden" style="border-radius: 15px;">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/TV_3BHK/IMG-20240131-WA0035.jpg" alt="Room 4" data-bs-toggle="modal" data-bs-target="#modalRoom4">
+                        </div>
+                        <div class="p-2 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Pool</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Pool View 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="room-item shadow rounded overflow-hidden" style="border-radius: 15px;">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/TV_3BHK/IMG-20240131-WA0044.jpg" alt="Room 5" data-bs-toggle="modal" data-bs-target="#modalRoom5">
+                        </div>
+                        <div class="p-2 mt-2">
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Garden</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <!-- Modals -->
+        
+        <!-- Modal for Room 4 -->
+        <div class="modal fade" id="modalRoom4" tabindex="-1" aria-labelledby="modalRoom4Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <img class="img-fluid w-100" src="img/TV_3BHK/IMG-20240131-WA0035.jpg" alt="Pool View 1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal for Room 5 -->
+        <div class="modal fade" id="modalRoom5" tabindex="-1" aria-labelledby="modalRoom5Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <img class="img-fluid w-100" src="img/TV_3BHK/IMG-20240131-WA0043.jpg" alt="Pool View 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+             
+
+    </div>
+
+    <!-- Carousel Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#roomCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#roomCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+       
+        </div>
+</div>
+</section>
+        <!-- Room End -->
+
+
+        
+
+
+        <!-- Service Start -->
+        <!-- <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title text-center text-primary text-uppercase">Our Services</h6>
+                    <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Services</span></h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-hotel fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">Rooms & Appartment</h5>
+                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-utensils fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">Food & Restaurant</h5>
+                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-spa fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">Spa & Fitness</h5>
+                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-swimmer fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">Sports & Gaming</h5>
+                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-glass-cheers fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">Event & Party</h5>
+                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <a class="service-item rounded" href="">
+                            <div class="service-icon bg-transparent border rounded p-1">
+                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                                    <i class="fa fa-dumbbell fa-2x text-primary"></i>
+                                </div>
+                            </div>
+                            <h5 class="mb-3">GYM & Yoga</h5>
+                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Service End -->
+
+
+        <!-- Testimonial Start -->
+        <section id=""> 
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-center text-secondary text-uppercase"></h6><br><br><br>
+            <h1 class="mb-5">Testimonial <span class="text-secondary text-uppercase">Customers</span></h1>
+        </div>
+        <div class="container-xxl testimonial my-5 py-5 bg-dark wow zoomIn" data-wow-delay="0.1s">
+            <div class="container">
+                
+                <div class="owl-carousel testimonial-carousel py-5">
+                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                        <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                                <h6 class="fw-bold mb-1">Client Name</h6>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                        <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
+                    </div>
+                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                        <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                                <h6 class="fw-bold mb-1">Client Name</h6>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                        <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
+                    </div>
+                    <div class="testimonial-item position-relative bg-white rounded overflow-hidden">
+                        <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd et erat magna eos</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-3.jpg" style="width: 45px; height: 45px;">
+                            <div class="ps-3">
+                                <h6 class="fw-bold mb-1">Client Name</h6>
+                                <small>Profession</small>
+                            </div>
+                        </div>
+                        <i class="fa fa-quote-right fa-3x text-primary position-absolute end-0 bottom-0 me-4 mb-n1"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Testimonial End -->
+
+
+        <!-- Team Start -->
+        <!-- <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title text-center text-primary text-uppercase">Our Team</h6>
+                    <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Staffs</span></h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/team-1.jpg" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Full Name</h5>
+                                <small>Designation</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="rounded shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/team-2.jpg" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Full Name</h5>
+                                <small>Designation</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="rounded shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/team-3.jpg" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Full Name</h5>
+                                <small>Designation</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="rounded shadow overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/team-4.jpg" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Full Name</h5>
+                                <small>Designation</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Team End -->
+
+
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="section-title text-center text-primary text-uppercase">Contact Us</h6>
+            <h1 class="mb-5"><span class="text-primary text-uppercase">Contact Us</span> For Instant Offers</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-12">
+                <div class="row gy-4">
+                    <div class="col-md-4">
+                        <h6 class="section-title text-start text-primary text-uppercase">Booking</h6>
+                        <p><i class="fa fa-envelope-open text-primary me-2"></i>book@example.com</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="section-title text-start text-primary text-uppercase">General</h6>
+                        <p><i class="fa fa-envelope-open text-primary me-2"></i>info@example.com</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h6 class="section-title text-start text-primary text-uppercase">Technical</h6>
+                        <p><i class="fa fa-envelope-open text-primary me-2"></i>tech@example.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
+                <iframe class="position-relative rounded w-100 h-100"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                    frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+            <div class="col-md-6">
+                <div class="wow fadeInUp" data-wow-delay="0.2s">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="hidden" name="access_key" value="51b377a5-f5dd-42de-b150-d58d3d75a504">
+                                <div class="form-floating">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Your Email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="tel" name="phone" class="form-control" id="email" placeholder="Enter your Number" required>
+                                    <label for="email">Phone no.</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" required>
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" name="message" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- Newsletter Start -->
+        <!-- <div class="container newsletter mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 border rounded p-1">
+                    <div class="border rounded text-center p-1">
+                        <div class="bg-white rounded text-center p-5">
+                            <h4 class="mb-4">Subscribe Our <span class="text-primary text-uppercase">Newsletter</span></h4>
+                            <div class="position-relative mx-auto" style="max-width: 400px;">
+                                <input class="form-control w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Newsletter Start -->
+        <br><br><br><br><br>
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container pb-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="bg-primary rounded p-4">
+                            <center><img src="img/staylogo.jpg" alt="Logo" style="height: 50px; width: auto; margin-right: 10px; border-radius: 50%;">
+                            <a href="index.html"><h1 class="text-white text-uppercase mb-3">StayKation</h1></a></center>
+                        
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>804/b, Pinnacle Technologies, Ashar IT Park, Wagle Estate, Thane</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12">
+                        <div class="row gy-5 g-4">
+                            <div class="col-md-6">
+                                <h6 class="section-title text-start text-primary text-uppercase mb-4">Company</h6>
+                                <a class="btn btn-link" href="about.html">About Us</a>
+                                <a class="btn btn-link" href="contact.html">Contact Us</a>
+                                <a class="btn btn-link" href="service.html">Services</a>
+                                <a class="btn btn-link" href="">Terms & Condition</a>
+                                <a class="btn btn-link" href="">Support</a>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="section-title text-start text-primary text-uppercase mb-4">Services</h6>
+                                <a class="btn btn-link" href="">Food & Restaurant</a>
+                                <a class="btn btn-link" href="">Spa & Fitness</a>
+                                <a class="btn btn-link" href="">Sports & Gaming</a>
+                                <a class="btn btn-link" href="">Event & Party</a>
+                                <a class="btn btn-link" href="">GYM & Yoga</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">StayKation</a>, All Right Reserved. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                        </div>
+                        <!-- <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Home</a>
+                                <a href="">Cookies</a>
+                                <a href="">Help</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
