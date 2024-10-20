@@ -87,18 +87,18 @@
                         <div class="col-lg-7 px-5 text-start">
                             <div class="h-100 d-inline-flex align-items-center py-2 me-4">
                                 <i class="fa fa-envelope text-primary me-2"></i>
-                                <p class="mb-0">info@example.com</p>
+                                <a class="mb-0" href="mailto: bookings@staykation.in"> bookings@staykation.in</a>
                             </div>
                             <div class="h-100 d-inline-flex align-items-center py-2">
                                 <i class="fa fa-phone-alt text-primary me-2"></i>
-                                <a class="mb-0" href="tel: +012 345 6789" >+012 345 6789</a>
+                                <a class="mb-0" href="tel: +91 8169788894" >+91 8169788894</a>
                             </div>
                         </div>
                         <div class="col-lg-5 px-5 text-end">
                             <div class="d-inline-flex align-items-center py-2">
                                 
                                 
-                                <a class="me-3" href="https://www.instagram.com/twinvillasofficial/"><i class="fab fa-instagram"></i></a>
+                                <a class="me-3" href="https://www.instagram.com/staykationofficial/"><i class="fab fa-instagram"></i></a>
                                 
                             </div>
                         </div>
@@ -112,10 +112,19 @@
                         </button>
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto py-0">
-                                <a href="index.html" class="nav-item nav-link">Home</a>
-                                <a href="" class="nav-item nav-link">></a>
+                                <a href="index.html" class="nav-item nav-link">Home</a>                          
                                 <a href="casa_bonita.html" class="nav-item nav-link">Casa-Bonita</a>
-                                <!-- <a href="room.html" class="nav-item nav-link">Rooms</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Other Villas</a>
+                                    <div class="dropdown-menu rounded-3 m-0">
+                                        <a href="mansionvilla.html" class="dropdown-item">Mansion Villa</a>
+                                        <a href="twin_villa_2BHK.html" class="dropdown-item">Twin Villa 2BHK</a>
+                                        <a href="twin_villa_3BHK.html" class="dropdown-item">Twin Villa 3BHK</a>
+                                        <a href="white_house.html" class="dropdown-item">White House</a>
+                                    </div>
+                                </div>
+
+                                <!-- <a href="villas.html" class="nav-item nav-link">Rooms</a>
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                     <div class="dropdown-menu rounded-0 m-0">
@@ -239,7 +248,7 @@
                     <div class="col-lg-6">
                         <!-- <h6 class="section-title text-start text-secondary text-uppercase"></h6> -->
                         <h1 class="mb-4">Welcome to <span class="text-secondary">Casa Bonita</span></h1>
-                        <h6 class="section-title text-start text-secondary text-uppercase">4-BHk</h6>
+                        <h6 class="section-title text-start text-secondary text-uppercase">4/3BHk</h6>
                         <!-- <p class="mb-4">Staykation offers luxurious villa rentals for unforgettable vacations. Experience comfort, privacy, and relaxation in stunning locations, perfect for a peaceful getaway or an adventure-filled retreat</p> -->
                         <p class="mb-4">Casa Bonita Villa is the perfect staycation getaway for families and groups looking for a luxurious retreat. This spacious villa features 4 beautifully designed bedrooms and 5 modern bathrooms, comfortably accommodating up to 8 guests. For larger groups, an additional 8 guests can be accommodated at an extra charge, making it an ideal space for gatherings, reunions, or special occasions.</p>
                         <p class="mb-4">With stylish interiors, high-end amenities, and ample living spaces, Casa Bonita Villa offers both comfort and elegance. Whether you're relaxing by the pool or enjoying the cozy indoor spaces, this villa ensures a memorable and relaxing staycation experience.</p>
@@ -267,11 +276,33 @@
                                 <div class="border rounded p-1">
                                     <div class="border rounded text-center p-4">
                                         <i class="fa fa-users fa-2x text-primary mb-2"></i>
-                                        <h2 class="mb-1" data-toggle="counter-up">8</h2>
+                                        <h2 class="mb-1" id="counter" data-target="10000">0</h2>
                                         <p class="mb-0">Guests</p>
                                     </div>
                                 </div>
                             </div>
+                            <script>
+                                function animateCounter(id, target) {
+                                    const counter = document.getElementById(id);
+                                    const speed = 50; // lower is faster
+                                    const updateCount = () => {
+                                        const current = +counter.innerText;
+                                        const increment = target / speed;
+                            
+                                        if (current < target) {
+                                            counter.innerText = Math.ceil(current + increment);
+                                            setTimeout(updateCount, 20);
+                                        } else {
+                                            counter.innerText = "10k+"; // Display "50k+" when finished
+                                        }
+                                    };
+                                    updateCount();
+                                }
+                            
+                                document.addEventListener("DOMContentLoaded", () => {
+                                    animateCounter("counter", 10000);
+                                });
+                            </script>
                         </div>
                         
                     </div>
@@ -342,17 +373,17 @@
                 <div class="amenities-buttons">
                     <!-- Guest Icon -->
                     <button>
-                        <i class="fas fa-user-friends"></i> 4 Guests
+                        <i class="fas fa-user-friends"></i> 12 Guests
                     </button>
             
                     <!-- Bed Icon -->
                     <button>
-                        <i class="fas fa-bed"></i> 2 Bedrooms
+                        <i class="fas fa-bed"></i> 4 Bedrooms
                     </button>
             
                     <!-- Bathroom Icon -->
                     <button>
-                        <i class="fas fa-bath"></i> 2 Bathrooms
+                        <i class="fas fa-bath"></i> 5 Bathrooms
                     </button>
             
                     <!-- Wifi Icon -->
@@ -416,7 +447,7 @@
                     </button>
                     </div>
                     <br>
-                    <h4 class=" text-start">Great for: <span class="text-secondary text-uppercase"> <i class="fas fa-user"></i> Senior Citizen, </span> <span class="text-secondary text-uppercase"> <i class="fas fa-child"></i> Kid </span></h4>
+                    <!-- <h4 class=" text-start">Great for: <span class="text-secondary text-uppercase"> <i class="fas fa-user"></i> Senior Citizen, </span> <span class="text-secondary text-uppercase"> <i class="fas fa-child"></i> Kid </span></h4> -->
             </div>
             <div class="col-lg-6">
                 <div class="row g-3">
@@ -1255,20 +1286,12 @@
                         <h6 class="section-title text-start text-primary text-uppercase">Booking</h6>
                         <p><i class="fa fa-envelope-open text-primary me-2"></i>book@example.com</p>
                     </div>
-                    <div class="col-md-4">
-                        <h6 class="section-title text-start text-primary text-uppercase">General</h6>
-                        <p><i class="fa fa-envelope-open text-primary me-2"></i>info@example.com</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h6 class="section-title text-start text-primary text-uppercase">Technical</h6>
-                        <p><i class="fa fa-envelope-open text-primary me-2"></i>tech@example.com</p>
-                    </div>
+                    <!-- <div class="col-md-4">                         <h6 class="section-title text-start text-primary text-uppercase">General</h6>                         <p><i class="fa fa-envelope-open text-primary me-2"></i>info@example.com</p>                     </div>                     <div class="col-md-4">                         <h6 class="section-title text-start text-primary text-uppercase">Technical</h6>                         <p><i class="fa fa-envelope-open text-primary me-2"></i>tech@example.com</p>                     </div> -->
                 </div>
             </div>
-            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3842.7365245930564!2d73.75049967489396!3d15.605719785008604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfebd95d7b509b%3A0xecd7ffa092bd0ff8!2s615%2C%201%2C%20Badem%2C%20Assagao%2C%20Vagator%2C%20Goa%20403507!5e0!3m2!1sen!2sin!4v1727180178447!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
             <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
                 <iframe class="position-relative rounded w-100 h-100"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3842.7365245930564!2d73.75049967489396!3d15.605719785008604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfebd95d7b509b%3A0xecd7ffa092bd0ff8!2s615%2C%201%2C%20Badem%2C%20Assagao%2C%20Vagator%2C%20Goa%20403507!5e0!3m2!1sen!2sin!4v1727180178447!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3842.7365245930564!2d73.75049967489396!3d15.605719785008603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfebd95d7b509b%3A0xecd7ffa092bd0ff8!2s615%2C%201%2C%20Badem%2C%20Assagao%2C%20Vagator%2C%20Goa%20403507!5e0!3m2!1sen!2sin!4v1728021292829!5m2!1sen!2sin"
                     frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
                     tabindex="0"></iframe>
             </div>
@@ -1350,8 +1373,8 @@
                     <div class="col-md-6 col-lg-3">
                         <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>804/b, Pinnacle Technologies, Ashar IT Park, Wagle Estate, Thane</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <a class="mb-2" href="tel: +91 81697888940"><i class="fa fa-phone-alt me-3"></i>+91 81697888940</a>
+                        <br><a class="mb-2" href="mailto:bookings@staykation.in"><i class="fa fa-envelope me-3"></i>bookings@staykation.in</a>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -1388,7 +1411,7 @@
                             &copy; <a class="border-bottom" href="#">StayKation</a>, All Right Reserved. 
 							
 							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+							<!-- Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> -->
                         </div>
                         <!-- <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">

@@ -93,18 +93,18 @@
                         <div class="col-lg-7 px-5 text-start">
                             <div class="h-100 d-inline-flex align-items-center py-2 me-4">
                                 <i class="fa fa-envelope text-primary me-2"></i>
-                                <p class="mb-0">info@example.com</p>
+                                <a class="mb-0" href="mailto: bookings@staykation.in"> bookings@staykation.in</a>
                             </div>
                             <div class="h-100 d-inline-flex align-items-center py-2">
                                 <i class="fa fa-phone-alt text-primary me-2"></i>
-                                <a class="mb-0" href="tel: +012 345 6789" >+012 345 6789</a>
+                                <a class="mb-0" href="tel: +91 8169788894" >+91 8169788894</a>
                             </div>
                         </div>
                         <div class="col-lg-5 px-5 text-end">
                             <div class="d-inline-flex align-items-center py-2">
                                 
                                 
-                                <a class="me-3" href="https://www.instagram.com/twinvillasofficial/"><i class="fab fa-instagram"></i></a>
+                                <a class="me-3" href="https://www.instagram.com/staykationofficial/"><i class="fab fa-instagram"></i></a>
                                 
                             </div>
                         </div>
@@ -119,9 +119,17 @@
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto py-0">
                                 <a href="index.html" class="nav-item nav-link">Home</a>
-                                <a href="" class="nav-item nav-link">></a>
                                 <a href="" class="nav-item nav-link">Twin Villa -3BHK</a>
-                                <!-- <a href="room.html" class="nav-item nav-link">Rooms</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Other Villas</a>
+                                    <div class="dropdown-menu rounded-3 m-0">
+                                        <a href="casa_bonita.html" class="dropdown-item">Casa-Bonita</a>
+                                        <a href="mansionvilla.html" class="dropdown-item">Mansion Villa</a>
+                                        <a href="twin_villa_2BHK.html" class="dropdown-item">Twin Villa 2BHK</a>
+                                        <a href="white_house.html" class="dropdown-item">White House</a>
+                                    </div>
+                                </div>
+                                <!-- <a href="villas.html" class="nav-item nav-link">Rooms</a>
                                 <div class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                     <div class="dropdown-menu rounded-0 m-0">
@@ -259,11 +267,33 @@
                                 <div class="border rounded p-1">
                                     <div class="border rounded text-center p-4">
                                         <i class="fa fa-users fa-2x text-primary mb-2"></i>
-                                        <h2 class="mb-1" data-toggle="counter-up">8</h2>
+                                        <h2 class="mb-1" id="counter" data-target="10000">0</h2>
                                         <p class="mb-0">Guests</p>
                                     </div>
                                 </div>
                             </div>
+                            <script>
+                                function animateCounter(id, target) {
+                                    const counter = document.getElementById(id);
+                                    const speed = 50; // lower is faster
+                                    const updateCount = () => {
+                                        const current = +counter.innerText;
+                                        const increment = target / speed;
+                            
+                                        if (current < target) {
+                                            counter.innerText = Math.ceil(current + increment);
+                                            setTimeout(updateCount, 20);
+                                        } else {
+                                            counter.innerText = "10k+"; // Display "50k+" when finished
+                                        }
+                                    };
+                                    updateCount();
+                                }
+                            
+                                document.addEventListener("DOMContentLoaded", () => {
+                                    animateCounter("counter", 10000);
+                                });
+                            </script>
                         </div>
                         
                     </div>
@@ -309,7 +339,7 @@
             
                     <!-- Bed Icon -->
                     <button>
-                        <i class="fas fa-bed"></i> 2 Bedrooms
+                        <i class="fas fa-bed"></i> 3 Bedrooms
                     </button>
             
                     <!-- Bathroom Icon -->
@@ -672,89 +702,6 @@
         <!-- Room End -->
 
 
-        
-
-
-        <!-- Service Start -->
-        <!-- <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="section-title text-center text-primary text-uppercase">Our Services</h6>
-                    <h1 class="mb-5">Explore Our <span class="text-primary text-uppercase">Services</span></h1>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <a class="service-item rounded" href="">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-hotel fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Rooms & Appartment</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                        <a class="service-item rounded" href="">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-utensils fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Food & Restaurant</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <a class="service-item rounded" href="">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-spa fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Spa & Fitness</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-                        <a class="service-item rounded" href="">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-swimmer fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Sports & Gaming</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <a class="service-item rounded" href="">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-glass-cheers fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">Event & Party</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <a class="service-item rounded" href="">
-                            <div class="service-icon bg-transparent border rounded p-1">
-                                <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
-                                    <i class="fa fa-dumbbell fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <h5 class="mb-3">GYM & Yoga</h5>
-                            <p class="text-body mb-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- Service End -->
-
-
         <!-- Testimonial Start -->
         <section id=""> 
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -896,19 +843,12 @@
                         <h6 class="section-title text-start text-primary text-uppercase">Booking</h6>
                         <p><i class="fa fa-envelope-open text-primary me-2"></i>book@example.com</p>
                     </div>
-                    <div class="col-md-4">
-                        <h6 class="section-title text-start text-primary text-uppercase">General</h6>
-                        <p><i class="fa fa-envelope-open text-primary me-2"></i>info@example.com</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h6 class="section-title text-start text-primary text-uppercase">Technical</h6>
-                        <p><i class="fa fa-envelope-open text-primary me-2"></i>tech@example.com</p>
-                    </div>
+                    <!-- <div class="col-md-4">                         <h6 class="section-title text-start text-primary text-uppercase">General</h6>                         <p><i class="fa fa-envelope-open text-primary me-2"></i>info@example.com</p>                     </div>                     <div class="col-md-4">                         <h6 class="section-title text-start text-primary text-uppercase">Technical</h6>                         <p><i class="fa fa-envelope-open text-primary me-2"></i>tech@example.com</p>                     </div> -->
                 </div>
             </div>
             <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
                 <iframe class="position-relative rounded w-100 h-100"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.2125311709788!2d72.95400479999999!3d19.273121699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bb006f8e8389%3A0xc4319610c935baf6!2sTwin%20villa!5e0!3m2!1sen!2sin!4v1729407607500!5m2!1sen!2sin"
                     frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
                     tabindex="0"></iframe>
             </div>
@@ -990,8 +930,8 @@
                     <div class="col-md-6 col-lg-3">
                         <h6 class="section-title text-start text-primary text-uppercase mb-4">Contact</h6>
                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>804/b, Pinnacle Technologies, Ashar IT Park, Wagle Estate, Thane</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <a class="mb-2" href="tel: +91 81697888940"><i class="fa fa-phone-alt me-3"></i>+91 81697888940</a>
+                        <br><a class="mb-2" href="mailto:bookings@staykation.in"><i class="fa fa-envelope me-3"></i>bookings@staykation.in</a>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -1028,7 +968,7 @@
                             &copy; <a class="border-bottom" href="#">StayKation</a>, All Right Reserved. 
 							
 							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+							<!-- Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> -->
                         </div>
                         <!-- <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
